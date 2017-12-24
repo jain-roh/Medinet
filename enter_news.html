@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="en-us">
+<TITLE>Enter Latest News</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+</HEAD>
+ <body bgcolor=#F0F0F0 	>
+ 
+   &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<object height="240" border="0" width="766" classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> 
+				<param name="movie" value="images/header.swf"> 
+				<param name="quality" value="High"> 
+				<embed height="240" width="766" src="images/header.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1"></embed></object> 
+				<br></div>
+				<br>
+<form action="enter_news.jsp" method=post name="aa" onsubmit="return func1();"><div align="center"> 
+<!-- ImageReady Slices (general_for_everyone.psd) --> 
+			</div><p align="center"><b><font face="Verdana" size="2" color="#2D5182">Enter Latest  
+			News regarding to Medical field (Compulsory):</font></b></p>
+			<p align="center"><font face="Verdana" size="2">Here user is free to enter latest  
+			news regarding to medical like new diseases,</font></p><p align="center"><font face="Verdana" size="2"> treatment and its proof  
+			respectively. Proof means from where you get it or if your a doctor</font></p><p align="center"><font face="Verdana" size="2"> treatment and its proof  
+			respectively. Proof means from where you get it or if your a doctor  
+			then <br></font></p><p align="center"><font face="Verdana" size="2">provide your details. If you want to see Latest News then  
+			<a href="news.jsp">click  
+			here!</a></font></p><p align="center"><br></p><p align="center"><font face="Verdana" size="2"><a href="news.jsp"><br></a></font></p>
+			<p align="center"><b><font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp; 
+			New Disease:</font></b>&nbsp;&nbsp;&nbsp;
+		<textarea name="n_disease" rows="3" cols="37" style="border:1px solid #6FB59F; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10pt; font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; color:#000000; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px; background-color:#FFFFFF"></textarea></p>
+			<p align="center">&nbsp;&nbsp;&nbsp;&nbsp; <b>
+			<font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			Proof:</font></b>&nbsp;&nbsp;&nbsp;
+		<textarea name="n_dproof" rows="3" cols="37" style="border:1px solid #6FB59F; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10pt; font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; color:#000000; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px; background-color:#FFFFFF"></textarea></p>
+			<p align="center"><b><font face="Verdana" size="2">New Treatment:</font></b>&nbsp;&nbsp;&nbsp;
+		<textarea name="n_treatment" rows="3" cols="37" style="border:1px solid #6FB59F; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10pt; font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; color:#000000; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px; background-color:#FFFFFF"></textarea></p>
+			<p align="center"><b><font size="2" face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			Proof:</font></b>&nbsp;&nbsp;&nbsp;
+		<textarea name="n_tproof" rows="3" cols="37" style="border:1px solid #6FB59F; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10pt; font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; color:#000000; padding-left:4px; padding-right:4px; padding-top:1px; padding-bottom:1px; background-color:#FFFFFF"></textarea></p>
+			<p align="center"><font face="Verdana" color="#ff0000" size="1"><br></font></p><p align="center"><font face="Verdana" color="#ff0000" size="1">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; (If  
+			you are not having any one of the item then please mention null)</font></p><p align="left"><br></p><div align="center"><input type="submit" value="Submit" name="B3" style="font-family: Verdana; font-size: 10px;"></div><p align="left"><td></td> 
+	<script language="javascript">
+<!&dash;
+function func1()
+{
+if(document.aa.n_disease.value=="")
+{
+alert("Please enter in Disease field")
+document.aa.n_disease.focus();
+return false;
+}
+else if(document.aa.n_dproof.value=="")
+{
+alert("Please Enter the Disease Proof")
+return false;
+}
+else if(document.aa.n_treatment.value=="")
+{
+alert("Please enter in Treatment Field")
+return false;
+}
+else if(document.aa.n_tproof.value=="")
+{
+alert("Please Enter the Treatment Proof")
+return false;
+}
+
+//&dash;>
+}</script> 
+ 
+	</p></form>
+
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

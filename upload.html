@@ -1,0 +1,38 @@
+
+<HTml>
+<HEAD><TITLE>Display file upload form to the user</TITLE></HEAD>
+  <BODY> <FORM  ENCTYPE="multipart/form-data" ACTION=
+"upload.jsp" METHOD=POST onsubmit="return check();">
+                <br><br><br>
+          <center><table border="2" >
+                    <tr><center><td colspan="2"><p align=
+"center"><B>Upload Video ..</B><center></td></tr>
+                    <tr><td><b>Choose the file To Upload:</b>
+</td>			               
+    <td><INPUT NAME="F1" TYPE="file" accept=".mp4" ID="F1"></td></tr>
+                                        <tr><td colspan="2">
+<p align="right"><INPUT TYPE="submit" VALUE="Upload Video" ></p></td></tr>
+             <table>
+<h3> Note You Can Upload video of Upto 30mb<br> and <br>video should be of only File Format .mp4 .</h3>
+     </center>      
+     </FORM>
+</BODY>
+<script type="text/javascript" language="JavaScript">
+function check() {
+  var ext = document.getElementById("F1").value;
+  ext = ext.substring(ext.length-3,ext.length);
+  ext = ext.toLowerCase();
+  if(ext == 'mp4')
+
+ {
+return true;
+}    
+else
+{
+alert('You selected a .'+ext+
+          ' file; please select a .mp4 file instead!');
+    return false; 
+  }
+}
+</script>
+</HTML>

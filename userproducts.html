@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>userproducts.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+   <body bgcolor=#F0F0F0>
+  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="766" height="240">
+				<param name="movie" value="images/header.swf"></param>
+				<param name="quality" value="High"></param>
+				<embed src="images/header.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="766" height="240"></object>
+				<br>
+				<br>
+	
+  <div align="center"><br></div><div align="center"><form method="post" action="userproducts.jsp" onsubmit ="return check();">
+  &nbsp;Enter Product Name&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp; <input type="text" maxlength="100" size="50" name="productname">
+  <br><br>Product Manufacturer&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp; 
+  <input type="text" maxlength="150" size="50" name="manufacturer"><br><br>
+  Disease Cured &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; :&nbsp; &nbsp;
+   <input type="text" maxlength="150" size="50" name="cure"><br>
+   <br>Any Side Effects&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;
+    <input type="text" maxlength="150" size="50" name="seffects"><br><br>
+    <input type="submit" value="Enter Producct" name="submit">&nbsp;&nbsp;&nbsp; 
+    <input type="reset" value="Reset" name="Reset"><br><br><br> 
+  </form></div>
+  <script type = "text/JavaScript" language="JavaScript" >
+  function check()
+  {
+  var pname=document.getElementByName("productname").value;
+  var manf=document.getElementsByName("manufacturer").value;
+  var dcure=document.getElementsByName("cure").value;
+  var side=document.getElementsByName("seffects").value;
+  
+  if((pname=="") || (side==""))
+  {
+  alert("Enter Product Name");
+  return false;
+  }
+  else if(manf=="")
+  {
+  alert("Enter Manufacturer Name");
+  return false;
+  }
+  else if(dcure=="")
+  {
+  alert("Enter Section Disease Cured");
+  return false;
+  }
+  else
+  {
+  return true;
+ 
+  }
+  
+  }
+  </script>
+   
+  
+  </body>
+</html>
